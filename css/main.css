@@ -115,6 +115,7 @@ section {
   background-size: 35px 35px;
   transform: translate(-50%, -50%) rotate(45deg);
   z-index: 11;
+  animation: 2s animate linear infinite;
 }
 
 .layer2 {
@@ -123,6 +124,7 @@ section {
   background-size: 35px 35px;
   transform: translate(-50%, -38%) rotate(45deg);
   z-index: 3;
+  animation: 2s animate__two linear infinite;
 }
 .layer3 {
   background: #222
@@ -130,6 +132,7 @@ section {
   background-size: 35px 35px;
   transform: translate(-50%, -62%) rotate(45deg);
   z-index: 3;
+  animation: 2s animate__two linear infinite;
 }
 
 .layer4 {
@@ -138,6 +141,7 @@ section {
   background-size: 35px 35px;
   transform: translate(-50%, -50%) rotate(-45deg);
   z-index: 12;
+  animation: 2s animate__two linear infinite;
 }
 
 .layer5 {
@@ -146,6 +150,7 @@ section {
   background-size: 35px 35px;
   transform: translate(-50%, -38%) rotate(-45deg);
   z-index: 10;
+  animation: 2s animate linear infinite;
 }
 .layer6 {
   background: #222
@@ -153,4 +158,23 @@ section {
   background-size: 35px 35px;
   transform: translate(-50%, -62%) rotate(-45deg);
   z-index: 10;
+  animation: 2s animate linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 35px -35px;
+  }
+}
+
+@keyframes animate__two {
+  0% {
+    background-position: 35px -35px;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
